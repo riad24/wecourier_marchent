@@ -67,20 +67,20 @@ class _DashBoardState extends State<DashBoard> {
   GlobalController globalController = GlobalController();
 @override
   void initState() {
-  FirebaseMessaging.instance
-      .getInitialMessage()
-      .then((RemoteMessage? message) {});
-
-  FirebaseMessaging.onMessage.listen((RemoteMessage message) {
-    Get.rawSnackbar(
-      snackPosition: SnackPosition.TOP,
-      title: message.notification?.title,
-      message: message.notification?.body,
-      backgroundColor: kMainColor.withOpacity(.9),
-      maxWidth: ScreenSize(context).mainWidth / 1.007,
-      margin: const EdgeInsets.only(bottom: 20, left: 20, right: 20),
-    );
-  });
+  // FirebaseMessaging.instance
+  //     .getInitialMessage()
+  //     .then((RemoteMessage? message) {});
+  //
+  // FirebaseMessaging.onMessage.listen((RemoteMessage message) {
+  //   Get.rawSnackbar(
+  //     snackPosition: SnackPosition.TOP,
+  //     title: message.notification?.title,
+  //     message: message.notification?.body,
+  //     backgroundColor: kMainColor.withOpacity(.9),
+  //     maxWidth: ScreenSize(context).mainWidth / 1.007,
+  //     margin: const EdgeInsets.only(bottom: 20, left: 20, right: 20),
+  //   );
+  // });
 
   // TODO: implement initState
     super.initState();

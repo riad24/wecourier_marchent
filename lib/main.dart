@@ -14,7 +14,7 @@ import 'Screen/Widgets/constant.dart';
 Future<void> main() async {
   final box = GetStorage();
   WidgetsFlutterBinding.ensureInitialized();
-  await Firebase.initializeApp();
+  // await Firebase.initializeApp();
   await GetStorage.init();
   dynamic langValue = const Locale('en', 'US');
   if (box.read('lang') != null) {
